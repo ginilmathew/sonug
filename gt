@@ -1,0 +1,30 @@
+git config --list
+git config --global user.name ""
+git config --global user.email ""
+(*master)
+    git merge b1
+
+git remote -v
+git remote add origin <url>
+git pull origin master --allow-unrelated-histories
+git push -u origin b1
+
+
+git stash save ""
+git stash list
+git stash show stash@{0}
+git stash show -p stash@{0}
+git stash apply stash@{0}
+git stash pop stash@{1}
+git stash drop stash@{0}
+git stash clear
+
+
+
+git log --oneline
+         --relative-date
+         --author "sonu"
+         git log head
+         
+git diff master b1
+git branch -m b1 b2
